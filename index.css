@@ -1,0 +1,385 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+@font-face {
+    font-family: 'monti';
+    src: url(css/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'monti2';
+    src: url(css/static/Montserrat-Bold.ttf);
+}
+h1, h2, h3, h4{
+    font-family: 'monti2', sans-serif;
+}
+p{
+    font-family: 'monti', sans-serif;
+    font-size: 12px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+:root{
+    --base-color:#161616;
+    --primary-color:#f9004d;
+}
+span{
+    color: var(--primary-color);
+}
+nav .nav{
+    width: 100vw;
+}
+nav .nav{
+    background-color: var(--base-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px ;
+}
+nav .nav i{
+    display: none; 
+    color: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+}
+nav .nav ul{
+    display: flex;
+ }
+nav .nav ul li{
+    list-style-type: none;
+    padding:10px 30px;
+}
+nav .nav ul li:hover{
+    color: var(--primary-color);;
+}
+nav .nav button{
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.slide{
+    display: none;
+}
+.hero{
+    width: 100vw;
+    height: 90vh;
+    background-color:var(--base-color);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.hero .details{
+    display: grid;
+    place-items: left;
+    margin-left: 60px;
+}
+.hero .details h1{
+    margin: 10px 0px;
+    font-size: 78px;
+}
+.hero .details h3{
+    font-size: 38px;
+}
+.hero .details h4{
+    font-size: 21px;
+
+}
+.about{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(32, 30, 30);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about .image{
+    width: 40%;
+    height: 80%;
+}
+.about .image img:nth-child(1){
+    display: none;
+}
+.about .detail{
+    width: 40%;
+    height: 80%;
+    overflow-y: hidden;
+    padding: 20px;
+}
+.about .detail h1{
+    font-size: 32px;
+}
+.about .detail h4{
+    font-size: 24px;
+    margin: 10px 0px;
+}
+.about .detail p{
+    line-height: 20px;
+    font-size:14px;
+}
+.about .detail button{
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.about .detail button:hover{
+    border: ipx solid var(--primary-color);
+    background-color: var(--base-color);
+    color: var(--primary-color);
+}
+.services{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    background-color: var(--base-color);
+    padding: 30px;
+}
+.services h1{
+    font-size: 34px;
+}
+.services .grid{
+    padding: 20px;
+    width: 78vw;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    
+}
+.services .grid .card{
+    background-color:rgb(32, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.services .grid .card i{
+     font-size: 45px;
+     color: var(--primary-color);
+     margin-bottom: 10px;
+}
+.services .grid .card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.services .grid .card p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+.services .grid .card button{
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color:var(--base-color);
+    border-radius:10px;
+    font-weight: bold;
+
+}
+/* begining of skills */
+.skills{
+    background-color:rgb(32, 30, 30); 
+    padding: 30px; 
+    width: 100vw;
+}
+.skills .skills-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    width: 70%;
+    margin: 0px auto;
+    
+}
+.skills .skills-service h1{
+    margin:10px 0px;
+    font-size: 32px;
+}
+.skills .skills-service p{
+    font-size: 14px;
+}
+.skills .skills-service .skills-grid{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* grid-auto-rows: 200px; */
+}
+.skills .skills-service .skills-grid div{
+    background-color: var(--base-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 5px 5px;
+    
+    border: 2px solid var(--primary-color);
+}
+.skills .skills-service .skills-grid div:hover{
+    background-color:rgb(32, 30, 30);
+    
+}
+.skills .skills-service .skills-grid div .overlap{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -25px;
+}
+.overlap i{
+    color: var(--base-color);
+}
+/* starting styles for hire */
+.hire{
+    width: 100vw;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    /* padding:10px; */
+    background-color:var(--base-color)
+}
+.hire button{
+    margin-top:20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color:var(--base-color);
+    border-radius:10px;
+    font-weight: bold;
+    font-size:20px;
+}
+.contact{
+    padding: 20px;
+    background-color:rgb(32, 30, 30);
+    width: 100vw;
+}
+.contact .contact-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0px auto;
+}
+.contact .contact-service .contact-grid{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.contact .contact-service .contact-grid i{
+    color: var(--primary-color);
+}
+.contact .contact-service .contact-grid div{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.contact .contact-service .contact-grid  div p{
+    margin: 0px;
+}
+.form{
+    margin-top: 30px;
+    width: 100%;
+}
+form{
+    width:100%;
+    font-size: 18px;
+}
+form .input-one,
+form .input-two,
+form .input-three{
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+}
+form .input-one input{
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    background-color: var(--base-color);
+}
+form .input-one input:nth-child(1){
+    margin-right: 2px;
+}
+form .input-one input:nth-child(2){
+    margin-left: 2px;
+}
+ form .input-two{ 
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+form .input-two input{
+    width: 100%;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--base-color);
+}
+form .input-three{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+} 
+form .input-three textarea{
+    width: 100%;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--base-color);
+    
+}
+.form .submit{
+    display: flex;
+    justify-content: center;
+}
+.form .submit button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color:var(--primary-color);
+    color: black;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+.footer{
+    width: 100vw;
+    height: 100px;
+    background-color: var(--base-color);
+}
